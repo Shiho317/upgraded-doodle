@@ -1,5 +1,6 @@
 import About from './components/about/About';
 import Header from './components/Header';
+import Locations from './components/locations/Locations';
 import Menu from './components/menu/Menu';
 import Shop from './components/shop/Shop';
 import Top from './components/top/Top';
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Menu />
       <Shop />
+      <Locations />
     </div>
   );
 }
