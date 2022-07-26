@@ -5,7 +5,7 @@ export const Nav = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,6 +15,12 @@ export const Nav = styled.nav`
     font-family: "Cormorant SC", serif;
     font-size: 2.2rem;
     color: ${(props) => props.theme.color.cream};
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.4;
+      transition: all 0.6s ease-in;
+    }
   }
 
   @media ${(props) => props.theme.device.laptop} {
@@ -38,10 +44,11 @@ export const Menu = styled.ul`
 
   li {
     list-style: none;
+    letter-spacing: 2px;
 
     &:hover {
-      opacity: 0.5;
-      transition: all 1s ease-in;
+      opacity: 0.4;
+      transition: all 0.6s ease-in;
     }
   }
 `;
