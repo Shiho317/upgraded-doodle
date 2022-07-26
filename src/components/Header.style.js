@@ -10,6 +10,7 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   background: transparent;
+  z-index: 100;
 
   h1 {
     font-family: "Cormorant SC", serif;
