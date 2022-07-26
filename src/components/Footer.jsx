@@ -1,7 +1,7 @@
-import React from 'react'
-import { ThemeProvider } from 'styled-components'
-import { theme } from '../styles/Theme'
-import { CompAddress, Contact, Copyright, FooterWrapper } from './Footer.style'
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import { theme } from "../styles/Theme";
+import { CompAddress, Contact, Copyright, FooterWrapper } from "./Footer.style";
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
         </Copyright>
       </FooterWrapper>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
