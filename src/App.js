@@ -1,6 +1,7 @@
 import About from './components/about/About';
 import Header from './components/Header';
 import Menu from './components/menu/Menu';
+import Shop from './components/shop/Shop';
 import Top from './components/top/Top';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Top />
       <About />
       <Menu />
+      <Shop />
     </div>
   );
 }
