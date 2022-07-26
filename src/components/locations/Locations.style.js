@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const LocationCont = styled.div`
   width: 100%;
-  background: ${props => props.theme.color.cream};
+  background: ${(props) => props.theme.color.cream};
 
   h3 {
     margin: 1.5rem;
     margin-top: 5rem;
   }
-`
+`;
 
 export const LocationImg = styled.div`
   width: 100%;
@@ -21,7 +21,7 @@ export const LocationImg = styled.div`
   img {
     width: 100%;
   }
-`
+`;
 
 export const LocationsDetails = styled.div`
   width: 100%;
@@ -29,7 +29,7 @@ export const LocationsDetails = styled.div`
   display: flex;
   align-items: flex-start;
   padding: 1.5rem;
-`
+`;
 
 export const Address = styled.div`
   flex: 1;
@@ -38,7 +38,7 @@ export const Address = styled.div`
     font-size: 0.8rem;
     line-height: 1.5rem;
   }
-`
+`;
 
 export const Greeting = styled.div`
   flex: 2.5;
@@ -69,4 +69,4 @@ export const Greeting = styled.div`
       transition: all 0.3s ease-in;
     }
   }
-`
+`;

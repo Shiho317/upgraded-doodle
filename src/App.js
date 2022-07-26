@@ -1,4 +1,5 @@
 import About from './components/about/About';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Locations from './components/locations/Locations';
 import Menu from './components/menu/Menu';
@@ -14,6 +15,7 @@ function App() {
       <Menu />
       <Shop />
       <Locations />
+      <Footer />
     </div>
   );
 }
