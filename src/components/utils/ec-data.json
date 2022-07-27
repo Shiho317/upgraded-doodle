@@ -1,0 +1,104 @@
+{
+  "items" : [
+    {
+      "name": "Chevron Blend 200g",
+      "price": "1300",
+      "description": "Chevron Blend 中深煎り Colombia,Brazil,Peru 3種類の豆をブレンドした Chevronオリジナルブレンドです。個性豊かな豆をブレンドする事でさらに奥行きある味を表現しました。ヘーゼルナッツの香ばしさから後味に残るミルクチョコレートのような甘味への変化をお楽しみください。ホットはもちろんアイスコーヒーとしてもお楽しみ頂けます。",
+      "howto": "Colombia ウォッシュド,Brazil ナチュラル,Peru ウォッシュド",
+      "amount": "200g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/62bbe976271dce5615c0.jpg",
+      "category": ["Coffee beans"]
+    },
+    {
+      "name": "Guatemala Huehuetenango 200g",
+      "price": "1500",
+      "description": "アーモンドのフレーバーとミルキーなチョコレートの様な余韻を感じられます。中深煎りで、コーヒーらしいコクがあります。アイスコーヒーにもおすすめです。",
+      "howto": "ウォッシュド",
+      "amount": "200g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/846fe6bd826b0d643f75.jpg",
+      "category": ["Coffee beans"]
+    },
+    {
+      "name": "Ethiopia Sidamo Guji 200g",
+      "price": "1400",
+      "description": "中煎りで仕上げており、柑橘系のフレーバーとブラウンシュガーの様な甘い後味を感じられるコーヒーです。紅茶の代わりに楽しむこともできる香り豊かなコーヒーです。",
+      "howto": "ウォッシュド",
+      "amount": "200g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/51d492dd6b15a4d91da1.jpg",
+      "category": ["Coffee beans"]
+    },
+    {
+      "name": "Colombia Huila Origen 200g",
+      "price": "1400",
+      "description": "アーモンドの香ばしい風味が感じられコクとボディの中にコロンビアらしい柑橘系のフレーバーを楽しめます。ミルクとの相性も良いです。",
+      "howto": "ウォッシュド",
+      "amount": "200g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/c667ebc686ff4559ea43.jpg",
+      "category": ["Coffee beans"]
+    },
+    {
+      "name": "Brazil South Minas Gerais 200g",
+      "price": "1500",
+      "description": "ナッツの風味とダークチョコレートの様な甘みを感じられます。中煎りで、ウォッシュドなのですっきりと飲めるコーヒーです。",
+      "howto": "ウォッシュド",
+      "amount": "200g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/41818d6ef5db0a1a7cc2.jpg",
+      "category": ["Coffee beans"]
+    },
+    {
+      "name": "Drip bag - Chevron Blend",
+      "price": "180",
+      "description": "マグカップに乗せてお湯を注ぐだけで 簡単にコーヒーを楽しめるドリップバッグです。お試しやプレゼントにもどうぞ。",
+      "howto": "ご家庭、オフィスやアウトドアでもお湯とコップがあれば淹れたての美味しいコーヒーが抽出できます。",
+      "amount": "10g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/9a74f164d7e749a0f4f8.jpg",
+      "category": ["Drip bags"]
+    },
+    {
+      "name": "Drip bag - Guatemala",
+      "price": "180",
+      "description": "マグカップに乗せてお湯を注ぐだけで 簡単にコーヒーを楽しめるドリップバッグです。お試しやプレゼントにもどうぞ。",
+      "howto": "ご家庭、オフィスやアウトドアでもお湯とコップがあれば淹れたての美味しいコーヒーが抽出できます。",
+      "amount": "10g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/48ffd108c57d60a4ee7d.jpg",
+      "category": ["Drip bags"]
+    },
+    {
+      "name": "Drip bag - Ethiopia",
+      "price": "180",
+      "description": "マグカップに乗せてお湯を注ぐだけで 簡単にコーヒーを楽しめるドリップバッグです。お試しやプレゼントにもどうぞ。",
+      "howto": "ご家庭、オフィスやアウトドアでもお湯とコップがあれば淹れたての美味しいコーヒーが抽出できます。",
+      "amount": "10g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/b186aa392e0a0fc7b84e.jpg",
+      "category": ["Drip bags"]
+    },
+    {
+      "name": "Drip bag - Colombia",
+      "price": "180",
+      "description": "マグカップに乗せてお湯を注ぐだけで 簡単にコーヒーを楽しめるドリップバッグです。お試しやプレゼントにもどうぞ。",
+      "howto": "ご家庭、オフィスやアウトドアでもお湯とコップがあれば淹れたての美味しいコーヒーが抽出できます。",
+      "amount": "10g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/f86b39d4947859f897ce.jpg",
+      "category": ["Drip bags"]
+    },
+    {
+      "name": "Drip bag - Brazil",
+      "price": "180",
+      "description": "マグカップに乗せてお湯を注ぐだけで 簡単にコーヒーを楽しめるドリップバッグです。お試しやプレゼントにもどうぞ。",
+      "howto": "ご家庭、オフィスやアウトドアでもお湯とコップがあれば淹れたての美味しいコーヒーが抽出できます。",
+      "amount": "10g",
+      "storage": "直射日光は避け、常温で保管してください。",
+      "images": "https://p1-e6eeae93.imageflux.jp/c!/f=webp:auto,a=2,w=920,h=920,b=ffffff00/chevron-coffee/de48b620ce1033a2606d.jpg",
+      "category": ["Drip bags"]
+    }
+  ]
+}
