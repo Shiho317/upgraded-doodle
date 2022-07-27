@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
   position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
   padding: 1.5rem;
@@ -10,12 +9,12 @@ export const Nav = styled.nav`
   align-items: center;
   justify-content: space-between;
   background: transparent;
+  transition: all 1s ease-out;
   z-index: 100;
 
   h1 {
     font-family: "Cormorant SC", serif;
     font-size: 2.2rem;
-    color: ${(props) => props.theme.color.cream};
     cursor: pointer;
 
     &:hover {
@@ -34,7 +33,6 @@ export const NavR = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: ${(props) => props.theme.color.cream};
 `;
 
 export const Menu = styled.ul`
@@ -53,3 +51,12 @@ export const Menu = styled.ul`
     }
   }
 `;
+
+export const Symbol = styled.div`
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+`

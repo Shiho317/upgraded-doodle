@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-awesome-reveal";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../../styles/Theme";
 import { Slides, Title1, Title2, Titles, TopFooter, TopP } from "./Top.style";
@@ -7,7 +8,8 @@ import slide1 from "../../img/slide1_2x.jpg";
 const Top = () => {
   return (
     <ThemeProvider theme={theme}>
-      <TopP>
+      <TopP id="top">
+        <Fade fraction={0.5} duration={4000} triggerOnce>
         <Titles>
           <Title1>
             <p>
@@ -29,6 +31,7 @@ const Top = () => {
           </p>
           <button>Scroll Down</button>
         </TopFooter>
+        </Fade>
       </TopP>
     </ThemeProvider>
   );

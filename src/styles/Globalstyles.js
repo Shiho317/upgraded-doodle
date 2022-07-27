@@ -9,4 +9,8 @@ export const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   font-family: 'Merriweather', serif;
 }
+
+.active {
+  opacity: 0.3;
+}
 `;

@@ -9,6 +9,12 @@ export const AboutUs = styled.div`
   padding: 10rem;
 `
 
+export const AboutDetails = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`
+
 export const AboutTitle = styled.div`
   
   p {
@@ -20,6 +26,19 @@ export const AboutTitle = styled.div`
   h1 {
     font-size: 4rem;
     letter-spacing: 4px;
+  }
+`
+
+export const AboutIntro = styled.div`
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  p {
+    font-size: 0.8rem;
+    letter-spacing: 1.5px;
+    line-height: 1.5rem;
   }
 `
 
