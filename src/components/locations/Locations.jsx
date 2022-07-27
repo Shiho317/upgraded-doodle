@@ -13,7 +13,7 @@ import infoFull from "../../img/info_full_2x.jpg";
 const Locations = () => {
   return (
     <ThemeProvider theme={theme}>
-      <LocationCont>
+      <LocationCont id="locations">
         <LocationImg>
           <img src={infoFull} alt="info" />
         </LocationImg>

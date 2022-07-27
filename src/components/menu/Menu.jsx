@@ -19,7 +19,7 @@ import latte from "../../img/latte_2x.jpg";
 const Menu = () => {
   return (
     <ThemeProvider theme={theme}>
-      <MenuCont>
+      <MenuCont id="menu">
         <h2>Menu</h2>
         <MenuDetails>
           <CoffeeImages>

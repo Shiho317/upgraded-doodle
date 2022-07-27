@@ -7,7 +7,7 @@ import { theme } from "../../styles/Theme";
 const About = () => {
   return (
     <ThemeProvider theme={theme}>
-      <AboutUs>
+      <AboutUs id="about-us">
         <AboutTitle>
           <p>Our Concept</p>
           <h1>The Experience</h1>

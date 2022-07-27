@@ -8,7 +8,7 @@ import roasting from "../../img/roasting_2x.jpg";
 const Shop = () => {
   return (
     <ThemeProvider theme={theme}>
-      <ShopCont>
+      <ShopCont id="shop">
         <ShopTitle>
           <h2>Shop</h2>
           <p>
