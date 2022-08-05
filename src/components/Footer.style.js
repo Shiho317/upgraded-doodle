@@ -2,11 +2,19 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.div`
   padding: 1.5rem;
-  padding-top: 10rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background: ${(props) => props.theme.color.cream};
+  gap: 1rem;
+
+  @media ${props => props.theme.device.laptop}{
+    padding-top: 10rem;
+    align-items: flex-end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+  }
 `;
 
 export const Contact = styled.div`

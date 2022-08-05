@@ -14,7 +14,7 @@ export const Nav = styled.nav`
 
   h1 {
     font-family: "Cormorant SC", serif;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
 
     &:hover {
@@ -26,6 +26,10 @@ export const Nav = styled.nav`
   @media ${(props) => props.theme.device.laptop} {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    h1 {
+      font-size: 2.2rem;
+    }
   }
 `;
 
