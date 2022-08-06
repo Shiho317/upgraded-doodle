@@ -52,15 +52,13 @@ const Header = () => {
   return (
     <ThemeProvider theme={theme}>
       <Nav style={{ top: showNav ? 0 : "-10rem" }}>
-        {Mobile ? (
+        {Laptop ? (
           <h1 style={{ color: onTop ? "#EDECE7" : "#242E43" }}>
-            Kagome
-            <br />
-            Coffee Roasers
+          Kagome Coffee Roasers
           </h1>
-        ) : (
+        ) :  (
           <h1 style={{ color: onTop ? "#EDECE7" : "#242E43" }}>
-            Kagome Coffee Roasers
+            Kagome<br/> Coffee Roasers
           </h1>
         )}
 
