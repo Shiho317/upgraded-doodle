@@ -64,3 +64,39 @@ export const Symbol = styled.div`
   justify-content: center;
   border-radius: 50%;
 `
+
+export const MobileMenu = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: ${props => props.theme.color.cream};
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  li {
+    list-style: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: ${props => props.theme.color.blue};
+      transition: all 0.3s ease;
+    }
+  }
+`
+
+export const CloseBtn = styled.div`
+  color: ${props => props.theme.color.black};
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+`
