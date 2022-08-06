@@ -3,10 +3,18 @@ import styled from "styled-components";
 export const ShopCont = styled.div`
   position: relative;
   display: flex;
+  flex-direction: column;
   padding: 2rem;
-  padding-bottom: 20rem;
+  padding-bottom: 10rem;
   justify-content: space-between;
   background: ${(props) => props.theme.color.cream};
+  gap: 1rem;
+
+  @media ${props => props.theme.device.laptop}{
+    padding-button: 20rem;
+    flex-direction: row;
+    gap: 0;
+  }
 `;
 
 export const ShopTitle = styled.div`
@@ -14,7 +22,7 @@ export const ShopTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 400px;
+  height: 200px;
 
   h2 {
     font-size: 2.5rem;
@@ -23,6 +31,10 @@ export const ShopTitle = styled.div`
   p {
     width: 60%;
     font-size: 0.8rem;
+  }
+
+  @media ${props => props.theme.device.laptop}{
+    height: 400px;
   }
 `;
 
@@ -60,7 +72,7 @@ export const ShopBtn = styled.div`
   gap: 2rem;
 
   button {
-    width: 60%;
+    width: 100%;
     height: 4rem;
     background-color: ${props => props.theme.color.orange};
     border: none;
@@ -75,9 +87,19 @@ export const ShopBtn = styled.div`
   }
 
   p {
-    width: 60%;
+    width: 100%;
     text-align: center;
     font-size: 0.8rem;
+  }
+
+  @media ${props => props.theme.device.laptop}{
+    button {
+      width: 60%;
+    }
+
+    p {
+      width: 60%;
+    }
   }
 `
 

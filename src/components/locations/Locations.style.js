@@ -12,7 +12,6 @@ export const LocationCont = styled.div`
 
 export const LocationImg = styled.div`
   width: 100%;
-  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,14 +20,23 @@ export const LocationImg = styled.div`
   img {
     width: 100%;
   }
+
+  @media ${props => props.theme.device.laptop}{
+    height: 450px;
+  }
 `;
 
 export const LocationsDetails = styled.div`
   width: 100%;
-  height: 15rem;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding: 1.5rem;
+
+  @media ${props => props.theme.device.laptop}{
+    flex-direction: row;
+    height: 15rem;
+  }
 `;
 
 export const Address = styled.div`

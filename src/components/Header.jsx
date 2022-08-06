@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link as Scroll } from "react-scroll";
+import { useMediaQuery } from "react-responsive";
 import { ThemeProvider } from "styled-components";
 import { theme } from "../styles/Theme";
-import { Symbol, Menu, Nav, NavR } from "./Header.style";
+import { Symbol, Menu, Nav, NavR, MobileMenu, CloseBtn } from "./Header.style";
 import { GiCoffeeBeans } from "react-icons/gi";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 const Header = () => {
   const [showNav, isShowNav] = useState(true);
@@ -36,38 +38,71 @@ const Header = () => {
     window.addEventListener("scroll", scrollDistance);
   }, []);
 
+  const Laptop = useMediaQuery({
+    query: "(min-width: 1024px)",
+  });
+
+  const Tablet = useMediaQuery({
+    query: "(min-width: 768px)",
+  });
+
+  const Mobile = useMediaQuery({
+    query: "(min-width: 320px)",
+  });
+
+  const [openMenu, setIsOpenMenu] = useState(false);
+
+  const clickMenu = () => {
+    setIsOpenMenu((prev) => !prev);
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <Nav style={{ top: showNav ? 0 : "-10rem" }}>
-        <h1 style={{ color: onTop ? "#EDECE7" : "#242E43" }}>
-          Kagome Coffee Roasers
-        </h1>
+        {Laptop ? (
+          <h1 style={{ color: onTop ? "#EDECE7" : "#242E43" }}>
+            Kagome Coffee Roasers
+          </h1>
+        ) : (
+          <h1 style={{ color: onTop ? "#EDECE7" : "#242E43" }}>
+            Kagome
+            <br /> Coffee Roasers
+          </h1>
+        )}
+
         <NavR style={{ color: onTop ? "#EDECE7" : "#242E43" }}>
-          <Menu>
-            <li>
-              <Scroll to="about-us" spy={true} smooth={true} duration={1500}>
-                About Us
-              </Scroll>
-            </li>
-            <li>
-              {" "}
-              <Scroll to="menu" spy={true} smooth={true} duration={1500}>
-                Menu
-              </Scroll>
-            </li>
-            <li>
-              {" "}
-              <Scroll to="shop" spy={true} smooth={true} duration={1500}>
-                Shop
-              </Scroll>
-            </li>
-            <li>
-              {" "}
-              <Scroll to="locations" spy={true} smooth={true} duration={1500}>
-                Locations
-              </Scroll>
-            </li>
-          </Menu>
+          {(Laptop || Tablet) && (
+            <Menu>
+              <li>
+                <Scroll to="about-us" spy={true} smooth={true} duration={1500}>
+                  About Us
+                </Scroll>
+              </li>
+              <li>
+                {" "}
+                <Scroll to="menu" spy={true} smooth={true} duration={1500}>
+                  Menu
+                </Scroll>
+              </li>
+              <li>
+                {" "}
+                <Scroll to="shop" spy={true} smooth={true} duration={1500}>
+                  Shop
+                </Scroll>
+              </li>
+              <li>
+                {" "}
+                <Scroll to="locations" spy={true} smooth={true} duration={1500}>
+                  Locations
+                </Scroll>
+              </li>
+            </Menu>
+          )}
+          {Mobile && (
+            <Menu onClick={clickMenu}>
+              <li>Menu</li>
+            </Menu>
+          )}
           <Symbol
             style={{
               color: onTop ? "#EDECE7" : "#242E43",
@@ -77,6 +112,62 @@ const Header = () => {
             <GiCoffeeBeans />
           </Symbol>
         </NavR>
+        {openMenu && (
+          <MobileMenu>
+            <CloseBtn onClick={() => setIsOpenMenu(false)}>
+              <AiFillCloseCircle />
+            </CloseBtn>
+            <ul>
+              <li>
+                <Scroll
+                  to="about-us"
+                  spy={true}
+                  smooth={true}
+                  duration={1500}
+                  onClick={() => setIsOpenMenu(false)}
+                >
+                  About Us
+                </Scroll>
+              </li>
+              <li>
+                {" "}
+                <Scroll
+                  to="menu"
+                  spy={true}
+                  smooth={true}
+                  duration={1500}
+                  onClick={() => setIsOpenMenu(false)}
+                >
+                  Menu
+                </Scroll>
+              </li>
+              <li>
+                {" "}
+                <Scroll
+                  to="shop"
+                  spy={true}
+                  smooth={true}
+                  duration={1500}
+                  onClick={() => setIsOpenMenu(false)}
+                >
+                  Shop
+                </Scroll>
+              </li>
+              <li>
+                {" "}
+                <Scroll
+                  to="locations"
+                  spy={true}
+                  smooth={true}
+                  duration={1500}
+                  onClick={() => setIsOpenMenu(false)}
+                >
+                  Locations
+                </Scroll>
+              </li>
+            </ul>
+          </MobileMenu>
+        )}
       </Nav>
     </ThemeProvider>
   );
