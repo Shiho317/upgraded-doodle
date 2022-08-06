@@ -14,7 +14,7 @@ export const Nav = styled.nav`
 
   h1 {
     font-family: "Cormorant SC", serif;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     cursor: pointer;
 
     &:hover {
@@ -26,6 +26,10 @@ export const Nav = styled.nav`
   @media ${(props) => props.theme.device.laptop} {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+    h1 {
+      font-size: 2.2rem;
+    }
   }
 `;
 
@@ -59,4 +63,40 @@ export const Symbol = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+`
+
+export const MobileMenu = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: ${props => props.theme.color.cream};
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  li {
+    list-style: none;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: ${props => props.theme.color.blue};
+      transition: all 0.3s ease;
+    }
+  }
+`
+
+export const CloseBtn = styled.div`
+  color: ${props => props.theme.color.black};
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
 `
